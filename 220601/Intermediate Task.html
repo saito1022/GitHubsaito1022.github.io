@@ -64,16 +64,170 @@
 
     .img-icon2-fluid {
       border-radius: 50%;
-      padding: 20px;
+      padding: 0px;
     }
-    .backtop{
-      background-color: #1cb4d3;
-      bottom: 0;
+
+    .img-fluid-1 {
+      padding-top: 80px;
+    }
+
+    .follow-me {
+      list-style: none;
+      margin: 0 0 -8px;
+      overflow: hidden;
+      padding: 0;
+
+    }
+    .follow-me li {
+      float: left;
+      margin: 0 8px 8px 0;
+      padding: 0;
+      text-align: center;
+    }
+    .follow-me {
+      list-style: none;
+      margin: 0 0 -8px;
+      overflow: hidden;
+      padding: 0;
+    }
+    .follow-me li {
+      float: left;
+      margin: 0 8px 8px 0;
+      padding: 0;
+    }
+    .follow-me li a::before {
+      border-style: solid;
+      border-width: 1px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
       color: #fff;
-      padding: 20px;
-      position: fixed;
-      right: 0;
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: 16px;
+      height: 42px; /* Button height */
+      line-height: 42px; /* Button height */
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      text-align: center;
+      width: 42px; /* Button width */
     }
+    .follow-me li a[href*="amazon.co.jp"]::before,
+    .follow-me li a[href*="amazon.com"]::before         { border-color: #ff9900; background-color: #ff9900; content: "\f270"; }
+    .follow-me li a[href*="codepen.io"]::before         { border-color: #000000; background-color: #000000; content: "\f1cb"; }
+    .follow-me li a[href*="delicious.com"]::before      { border-color: #3399ff; background-color: #3399ff; content: "\f1a5"; }
+    .follow-me li a[href*="deviantart.com"]::before     { border-color: #05cc47; background-color: #05cc47; content: "\f1bd"; }
+    .follow-me li a[href*="digg.com"]::before           { border-color: #000000; background-color: #000000; content: "\f1a6"; }
+    .follow-me li a[href*="dribble.com"]::before        { border-color: #000000; background-color: #ea4c89; content: "\f17d"; }
+    .follow-me li a[href*="dropbox.com"]::before        { border-color: #007ee5; background-color: #007ee5; content: "\f16b"; }
+    .follow-me li a[href*="facebook.com"]::before       { border-color: #3b5998; background-color: #3b5998; content: "\f09a"; }
+    .follow-me li a[href*="feedly.com"]::before         { border-color: #6cc655; background-color: #6cc655; content: "\f09e"; }
+    .follow-me li a[href*="flickr.com"]::before         { border-color: #0063cc; background-color: #0063dc; content: "\f16e"; }
+    .follow-me li a[href*="foursquare.com"]::before     { border-color: #f94877; background-color: #f94877; content: "\f180"; }
+    .follow-me li a[href*="github.com"]::before         { border-color: #181717; background-color: #181717; content: "\f09b"; }
+    .follow-me li a[href*="plus.google.com"]::before    { border-color: #dc4e41; background-color: #dc4e41; content: "\f0d5"; }
+    .follow-me li a[href*="b.hatena.ne.jp"]::before     { border-color: #008fde; background-color: #008fde; content: "\f027"; font-family: blogicon; }
+    .follow-me li a[href*="instagram.com"]::before      { border-color: #125688; background-color: #125688; content: "\f16d"; }
+    .follow-me li a[href*="last.fm"]::before            { border-color: #d51007; background-color: #d51007; content: "\f202"; }
+    .follow-me li a[href*="linkedin.com"]::before       { border-color: #0077b5; background-color: #0077b5; content: "\f0e1"; }
+    .follow-me li a[href*="nicovideo.jp"]::before       { border-color: #eaeaea; background-color: #eaeaea; content: "\f047"; font-family: blogicon; }
+    .follow-me li a[href*="pinterest.com"]::before      { border-color: #bd081c; background-color: #bd081c; content: "\f0d2"; }
+    .follow-me li a[href*="getpocket.com"]::before      { border-color: #ef3f56; background-color: #ef3f56; content: "\f265"; }
+    .follow-me li a[href*="reddit.com"]::before         { border-color: #ff4500; background-color: #ff4500; content: "\f1a1"; }
+    .follow-me li a[href*="skype.com"]::before,
+    .follow-me li a[href*="skype:"]::before             { border-color: #00aff0; background-color: #00aff0; content: "\f17e"; }
+    .follow-me li a[href*="slideshare.net"]::before     { border-color: #2d2d2d; background-color: #2d2d2d; content: "\f1e7"; }
+    .follow-me li a[href*="spotify.com"]::before        { border-color: #84bd00; background-color: #84bd00; content: "\f1bc"; }
+    .follow-me li a[href*="steamcommunity.com"]::before { border-color: #171a21; background-color: #171a21; content: "\f1b6"; }
+    .follow-me li a[href*="stumbleupon.com"]::before    { border-color: #eb4929; background-color: #eb4929; content: "\f1a4"; }
+    .follow-me li a[href*="tumblr.com"]::before         { border-color: #36465d; background-color: #36465d; content: "\f173"; }
+    .follow-me li a[href*="twitch.tv"]::before          { border-color: #6441a5; background-color: #6441a5; content: "\f1e8"; }
+    .follow-me li a[href*="twitter.com"]::before        { border-color: #55acee; background-color: #55acee; content: "\f099"; }
+    .follow-me li a[href*="vimeo.com"]::before          { border-color: #1ab7ea; background-color: #1ab7ea; content: "\f27d"; }
+    .follow-me li a[href*="vine.co"]::before            { border-color: #11b58a; background-color: #11b58a; content: "\f1ca"; }
+    .follow-me li a[href*="weibo.com"]::before          { border-color: #e6162d; background-color: #e6162d; content: "\f18a"; }
+    .follow-me li a[href*="whatsapp.com"]::before       { border-color: #64d548; background-color: #64d548; content: "\f232"; }
+    .follow-me li a[href*="wordpress.com"]::before,
+    .follow-me li a[href*="wordpress.org"]::before      { border-color: #21759b; background-color: #21759b; content: "\f19a"; }
+    .follow-me li a[href*="youtube.com"]::before        { border-color: #cd201f; background-color: #cd201f; content: "\f16a"; }
+    .follow-me li a[href$="/feed"]::before              { border-color: #ffa500; background-color: #ffa500; content: "\f09e"; }
+    .follow-me li a[href$="/subscribe"]::before         { border-color: #363636; background-color: #363636; content: "\f000"; font-family: blogicon; }
+    .follow-me li a:hover::before {
+      background-color: #fff;
+    }
+    .follow-me li a[href*="amazon.co.jp"]:hover::before,
+    .follow-me li a[href*="amazon.com"]:hover::before         { color: #ff9900; }
+    .follow-me li a[href*="codepen.io"]:hover::before         { color: #000000; }
+    .follow-me li a[href*="delicious.com"]:hover::before      { color: #3399ff; }
+    .follow-me li a[href*="deviantart.com"]:hover::before     { color: #05cc47; }
+    .follow-me li a[href*="digg.com"]:hover::before           { color: #000000; }
+    .follow-me li a[href*="dribble.com"]:hover::before        { color: #ea4c89; }
+    .follow-me li a[href*="dropbox.com"]:hover::before        { color: #007ee5; }
+    .follow-me li a[href*="facebook.com"]:hover::before       { color: #3b5998; }
+    .follow-me li a[href*="feedly.com"]:hover::before         { color: #6cc655; }
+    .follow-me li a[href*="flickr.com"]:hover::before         { color: #0063dc; }
+    .follow-me li a[href*="foursquare.com"]:hover::before     { color: #f94877; }
+    .follow-me li a[href*="github.com"]:hover::before         { color: #181717; }
+    .follow-me li a[href*="plus.google.com"]:hover::before    { color: #dc4e41; }
+    .follow-me li a[href*="b.hatena.ne.jp"]:hover::before     { color: #008fde; }
+    .follow-me li a[href*="instagram.com"]:hover::before      { color: #125688; }
+    .follow-me li a[href*="last.fm"]:hover::before            { color: #d51007; }
+    .follow-me li a[href*="linkedin.com"]:hover::before       { color: #0077b5; }
+    .follow-me li a[href*="nicovideo.jp"]:hover::before       { color: #eaeaea; }
+    .follow-me li a[href*="pinterest.com"]:hover::before      { color: #bd081c; }
+    .follow-me li a[href*="getpocket.com"]:hover::before      { color: #ef3f56; }
+    .follow-me li a[href*="reddit.com"]:hover::before         { color: #ff4500; }
+    .follow-me li a[href*="skype.com"]:hover::before,
+    .follow-me li a[href*="skype:"]:hover::before             { color: #00aff0; }
+    .follow-me li a[href*="slideshare.net"]:hover::before     { color: #2d2d2d; }
+    .follow-me li a[href*="spotify.com"]:hover::before        { color: #84bd00; }
+    .follow-me li a[href*="steamcommunity.com"]:hover::before { color: #171a21; }
+    .follow-me li a[href*="stumbleupon.com"]:hover::before    { color: #eb4929; }
+    .follow-me li a[href*="tumblr.com"]:hover::before         { color: #36465d; }
+    .follow-me li a[href*="twitch.tv"]:hover::before          { color: #6441a5; }
+    .follow-me li a[href*="twitter.com"]:hover::before        { color: #55acee; }
+    .follow-me li a[href*="vimeo.com"]:hover::before          { color: #1ab7ea; }
+    .follow-me li a[href*="vine.co"]:hover::before            { color: #11b58a; }
+    .follow-me li a[href*="weibo.com"]:hover::before          { color: #e6162d; }
+    .follow-me li a[href*="whatsapp.com"]:hover::before       { color: #64d548; }
+    .follow-me li a[href*="wordpress.com"]:hover::before,
+    .follow-me li a[href*="wordpress.org"]:hover::before      { color: #21759b; }
+    .follow-me li a[href*="youtube.com"]:hover::before        { color: #cd201f; }
+    .follow-me li a[href$="/feed"]:hover::before              { color: #ffa500; }
+    .follow-me li a[href$="/subscribe"]:hover::before         { color: #363636; }
+    body {
+      overflow-x: hidden;
+    }
+    .info{
+      padding-bottom: 20px;
+    }
+    .h11{
+      padding-top: 10px;
+    }
+    .rate-form {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+    .rate-form input[type=radio] {
+      display: none;
+    }
+    .rate-form label {
+      position: relative;
+      padding: 0 5px;
+      color: #ccc;
+      cursor: pointer;
+      font-size: 35px;
+    }
+    .rate-form label:hover {
+      color: #ffcc00;
+    }
+    .rate-form label:hover ~ label {
+      color: #ffcc00;
+    }
+    .rate-form input[type=radio]:checked ~ label {
+      color: #ffcc00;
+    }
+
 
 
   </style>
@@ -105,9 +259,13 @@
 
 
   </header>
-  <div class="row">
-    <img class="img-fluid" src="img/1.jpg" alt="画像です。" width="100%" height="100%">
-  </div>
+
+
+</div>
+</div>
+<div class="row">
+  <img class="img-fluid-1" src="img/1.jpg" alt="画像です。" width="100%" height="100%">
+</div>
 </div>
 
 <div class="container">
@@ -120,12 +278,28 @@
   </nav>
   <div class="row">
     <div class="col-12 col-md-9 border-bottom border-gray">
-      <div class="h1">「古見さんはコミュ症です」の感想</div>
+      <div class="h1">「古見さんはコミュ症です」を観て</div>
       <p>2022/6/1 17:05</p>
       <p>このアニメは主人公である古見 硝子（こみ しょうこ）が高校で友達100人作ることを目指すアニメです。</p>
       <p>ですが、古見さんは極度のコミュ症なので、思うように会話が出来ません。</p>
       <p>なので、いつもはノートに書いて会話します</p>
-      <img class="img-fluid" src="img/k1.jpg" alt="画像です。" width="100%" height="70%">
+      <p>僕が好きなところは古見さんが猫耳になる所や目が丸くなる所です。</p>
+      <p>古見さんがアニメで実際に話すシーンは実は珍しいのですが、珍しいからこそキュンときます。</p>
+      <img class="img-fluid" src="img/k1.png" alt="画像です。" width="50%" height="50%">
+
+      <div class="rate-form">
+        <input id="star5" type="radio" name="rate" value="5">
+        <label for="star5">★</label>
+        <input id="star4" type="radio" name="rate" value="4">
+        <label for="star4">★</label>
+        <input id="star3" type="radio" name="rate" value="3">
+        <label for="star3">★</label>
+        <input id="star2" type="radio" name="rate" value="2">
+        <label for="star2">★</label>
+        <input id="star1" type="radio" name="rate" value="1">
+        <label for="star1">★</label>
+      </div>
+
     </div>
     <div class="d-none d-md-block col-3 border-gray">
       <div class="text-center">
@@ -134,7 +308,11 @@
         <p>komi</p>
         <p>コミュ症</p>
         <hr>
-        <p>ボランティアコネクション、天文サークル所属</p>
+        <p>ボランティアコネクションと</p>
+        <p>天文サークルに所属</p>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
       </div>
       <hr>
       <div class="info">
@@ -143,17 +321,34 @@
         <li><a href=”#”>会話のコツ</a></li>
         <li><a href=”#”>好きな人の好きな人</a></li>
       </div>
+      <ul class="follow-me">
+        <li><a href="https://twitter.com"></a></li>
+        <li><a href="https://www.facebook.com"></a></li>
+        <li><a href="https://www.youtube.com"></a></li>
+      </ul>
     </div>
     <div class="col-12 col-md-9 border-gray">
       <div class="h1">告白</div>
       <p>2022/5/25 17:05</p>
       <p>好きな人に告白しました。</p>
-      <img class="img-fluid" src="img/k2.jpg" alt="画像です。" width="100%" height="70%">
+      <img class="img-fluid" src="img/k2.png" alt="画像です。" width="50%" height="50%">
       <p>返事は「ありがとうございます」でした。</p>
       <p>とてもショックでした。</p>
       <P>しかし、恋愛をすることで、少しずつ会話ができるようになったり、</P>
       <P>人前に出る勇気がでるようになったりと、人として成長したと自信を持って言えます。</P>
       <P>なので、感謝しています！お幸せに！</P>
+      <div class="rate-form">
+        <input id="star55" type="radio" name="rate" value="5">
+        <label for="star5">★</label>
+        <input id="star44" type="radio" name="rate" value="4">
+        <label for="star4">★</label>
+        <input id="star33" type="radio" name="rate" value="3">
+        <label for="star3">★</label>
+        <input id="star22" type="radio" name="rate" value="2">
+        <label for="star2">★</label>
+        <input id="star11" type="radio" name="rate" value="1">
+        <label for="star1">★</label>
+      </div>
     </div>
 
   </div>
@@ -163,6 +358,18 @@
     <div class="text-center">
       <img class="img-icon2-fluid" src="img/icon.jpg" alt="画像です。" width="50%" height="50%">
       <div class="h3">こみ</div>
+      <p>komi</p>
+      <p>コミュ症</p>
+      <hr>
+      <p>ボランティアコネクションと</p>
+      <p>天文サークルに所属</p>
+    </div>
+    <hr>
+    <div class="info">
+      <h5>最新記事</h5>
+      <li><a class=”t” href=”#”>コミュ症の克服</a></li>
+      <li><a href=”#”>会話のコツ</a></li>
+      <li><a href=”#”>好きな人の好きな人</a></li>
     </div>
 
   </div>
@@ -178,7 +385,7 @@
     <ul>
       <li><a class=”t” href=”#”>ヘルプ</a></li>
       <li><a href=”#”>利用規約</a></li>
-      <li><a href=”#”>privacy policy</a></li>
+
       <li>© BLOG</li>
     </ul>
   </nav>
