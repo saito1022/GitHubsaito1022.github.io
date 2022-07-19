@@ -6,6 +6,28 @@
   <meta charset="UTF-8">
   <title>悩み解決</title>
   <meta name="viewport" content="width=device-width">
+  <style>
+  .bts {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+  .bts iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .ashitamo{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+  .ashitamo iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .GD-fluid{
+    width: 100%;
+    height: 100%;
+  }
+  </style>
 </head>
 <body>
 <div class="container">
@@ -58,7 +80,7 @@
       <!-- <h1 class="display-4 font-italic">Title of a longer featured blog post</h1> -->
       <h1 class="display-4">ニッチな悩みを解決します</h1>
       <!-- <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p> -->
-      <p class="lead my-3">共感してもらえないような悩みを、音楽を聴いたり、動画を観たりして解決しませんか？</p>
+      <p class="lead my-3">共感してもらえないような悩みを、音楽を聴いたり、動画を観たり、解決してみませんか？</p>
       <!-- <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
       <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">続きを読む</a></p>
     </div>
@@ -92,7 +114,7 @@
             <a class="text-dark" href="#">コミュニケーションが苦手</a>
           </h3>
           <!-- <div class="mb-1 text-muted">Nov 11</div> -->
-          <div class="mb-1 text-muted"><script src="https://apis.google.com/js/platform.js"></script>
+          <div class="mb-1 text-muted">
           </div>
           <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
           <p class="card-text ml-auto">会話があまり盛り上がらない。返事が「うん」「そうなんだ」しか思いつかない。</p>
@@ -147,35 +169,46 @@
 
       <div class="blog-post">
         <!-- <h2 class="blog-post-title">Sample blog post</h2> -->
-        <h2 class="blog-post-title">音楽を聴く♪</h2>
+        <h2 class="blog-post-title">1.音楽を聴く♪</h2>
         <!-- <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p> -->
         <p class="blog-post-meta">2022/07/18 by <a href="#">Tetsu</a></p>
 
         <!-- <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p> -->
-        <p>気分が落ち込んでいる時は、音楽を聴きましょう。元気が出る曲を3つ紹介します。</p>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CuklIb9d3fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        <p>気分が落ち込んでいる時は誰でもあります。まずは、音楽を聴きて、気分転換しましょう。元気が出る曲を3つ紹介します。</p>
+        <div class="bts">
+        <iframe src="https://www.youtube.com/embed/CuklIb9d3fI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <!-- <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p> -->
         <p>この曲の歌詞に「いつだってすべてがうまく行くことはないし、全てを完ぺきにコントロールすることなんてできない。だけど、乗り越えられる方法はある。」とあって、希望が持てます。 </p>
         <blockquote>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/zhCtzmDWsN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="ashitamo">
+          <iframe src="https://www.youtube.com/embed/zhCtzmDWsN0" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           <!-- <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
           <p>「ダメだ、もうダメだ、立ち上がれない。そんな自分変えたくて今日も行く。」の所が好きです。</p>
         </blockquote>
         <!-- <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p> -->
         <p></p>
         <!-- <h2>Heading</h2> -->
-        <h2>グループワーク対策</h2>
+        <h2>2.グループワーク対策</h2>
+        <img class="GD-fluid" src="img/GD.jpg" alt="GDの画像" title="GD">
         <!-- <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> -->
-        <p>第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。どうも咽せぽくて実に弱った。これが人間の飲む煙草というものである事はようやくこの頃知った。</p>
+        <p>次に、グループワークの対策に移ります。グループワークではディスカッションによって、課題のスピードや質が大きく変化します。</p>
         <!-- <h3>Sub-heading</h3> -->
-        <h3>サブの見出し</h3>
+        <h3>グループディスカッション</h3>
         <!-- <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p> -->
         <!-- <pre><code>Example code block</code></pre> -->
-        <pre><code>コードブロックの例</code></pre>
+
         <!-- <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p> -->
-        <p>しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。</p>
+        <p>グループディスカッションは役割が　
+          <ul>
+        <li>司会</li>
+        <li>書記</li>
+        <li>タイムキーパー</li>
+        <li>アイデア出し</li>
+        <li>発表者</li>
+      </ul>
+        に分かれます。そして、自分の役割に囚われず、時には他の人の役割をサポートする必要があります。
         <!-- <h3>Sub-heading</h3> -->
         <h3>サブの見出し</h3>
         <!-- <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> -->
@@ -190,14 +223,7 @@
         </ul>
         <!-- <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p> -->
         <p>掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。</p>
-        <ol>
-          <!-- <li>Vestibulum id ligula porta felis euismod semper.</li> -->
-          <li>この時妙なものだと思った感じが今でも残っている。</li>
-          <!-- <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li> -->
-          <li>第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。</li>
-          <!-- <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li> -->
-          <li>その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。</li>
-        </ol>
+
         <p>のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。どうも咽せぽくて実に弱った。</p>
       </div><!-- /.blog-post -->
 
@@ -352,24 +378,20 @@
     </aside><!-- /.blog-sidebar -->
 
   </div><!-- /.row -->
-  </div>
+
 </main>
 <footer class="blog-footer">
   <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
-  <p>このブログテンプレートは<a href="https://getbootstrap.jp/">Bootstrap</a>のために<a href="https://twitter.com/mdo">@mdo</a>によって作成されました。</p>
-  <p>
+
     <!-- <a href="#">Back to top</a> -->
-    <a href="#">トップに戻る</a>
-  </p>
+  <div class="text-center">
+  <a href="#">トップに戻る</a>
+    <p class="d-inline mx-1">|</p>
+  <a href="help.html">ヘルプ</a>
+  </div>
 </footer>
-<script src="../../assets/js/vendor/holder.min.js"></script>
-<script>
-    Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-    });
-</script>
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
