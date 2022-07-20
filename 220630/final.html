@@ -7,26 +7,50 @@
   <title>悩み解決</title>
   <meta name="viewport" content="width=device-width">
   <style>
-  .bts {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-  }
-  .bts iframe {
-    width: 100%;
-    height: 100%;
-  }
-  .ashitamo{
-    width: 100%;
-    aspect-ratio: 16 / 9;
-  }
-  .ashitamo iframe {
-    width: 100%;
-    height: 100%;
-  }
-  .GD-fluid{
-    width: 100%;
-    height: 100%;
-  }
+
+    .bts {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+
+    .bts iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ashitamo {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+
+    .ashitamo iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    h2 {
+      padding: 0.5em; /*文字周りの余白*/
+      color: #494949; /*文字色*/
+      background: #fffaf4; /*背景色*/
+      border-left: solid 5px #ffaf58; /*左線（実線 太さ 色）*/
+
+    }
+
+    h3 {
+      padding: 0.25em 0.5em; /*上下 左右の余白*/
+      color: #494949; /*文字色*/
+      background: transparent; /*背景透明に*/
+      border-left: solid 5px #ffaf58; /*左線*/
+    }
+
+    h4 {
+      border-bottom: solid 2px black;
+    }
   </style>
 </head>
 <body>
@@ -43,7 +67,11 @@
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
         <a class="text-muted" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3">
+            <circle cx="10.5" cy="10.5" r="7.5"></circle>
+            <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+          </svg>
         </a>
         <!-- <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
         <a class="btn btn-sm btn-outline-secondary" href="#">ログイン</a>
@@ -91,11 +119,11 @@
       <div class="card flex-md-row mb-4 shadow-sm h-md-250">
         <div class="card-body d-flex flex-column align-items-start">
           <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
-          <strong class="d-inline-block mb-2 text-success">アルバイト</strong>
-          <h3 class="mb-0">
+          <strong class="d-inline-block mb-2 text-secondary">アルバイト</strong>
+          <h4 class="mb-0">
             <!-- <a class="text-dark" href="#">Featured post</a> -->
             <a class="text-dark" href="#">上司との関係</a>
-          </h3>
+          </h4>
           <!-- <div class="mb-1 text-muted">Nov 12</div> -->
           <div class="mb-1 text-muted"></div>
           <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
@@ -109,10 +137,10 @@
       <div class="card flex-md-row mb-4 shadow-sm h-md-250">
         <div class="card-body d-flex flex-column align-items-start">
           <!-- <strong class="d-inline-block mb-2 text-success">Design</strong> -->
-          <strong class="d-inline-block mb-2 text-success">コミュ症</strong>
-          <h3 class="mb-0">
+          <strong class="d-inline-block mb-2 text-secondary">コミュ症</strong>
+          <h4 class="mb-0">
             <a class="text-dark" href="#">コミュニケーションが苦手</a>
-          </h3>
+          </h4>
           <!-- <div class="mb-1 text-muted">Nov 11</div> -->
           <div class="mb-1 text-muted">
           </div>
@@ -127,10 +155,10 @@
       <div class="card flex-md-row mb-4 shadow-sm h-md-250">
         <div class="card-body d-flex flex-column align-items-start">
           <!-- <strong class="d-inline-block mb-2 text-success">Design</strong> -->
-          <strong class="d-inline-block mb-2 text-success">恋愛</strong>
-          <h3 class="mb-0">
+          <strong class="d-inline-block mb-2 text-secondary">恋愛</strong>
+          <h4 class="mb-0">
             <a class="text-dark" href="#">片思い</a>
-          </h3>
+          </h4>
           <!-- <div class="mb-1 text-muted">Nov 11</div> -->
           <div class="mb-1 text-muted"></div>
           <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
@@ -144,10 +172,10 @@
       <div class="card flex-md-row mb-4 shadow-sm h-md-250">
         <div class="card-body d-flex flex-column align-items-start">
           <!-- <strong class="d-inline-block mb-2 text-success">Design</strong> -->
-          <strong class="d-inline-block mb-2 text-success">講義</strong>
-          <h3 class="mb-0">
+          <strong class="d-inline-block mb-2 text-secondary">講義</strong>
+          <h4 class="mb-0">
             <a class="text-dark" href="#">SCD</a>
-          </h3>
+          </h4>
           <!-- <div class="mb-1 text-muted">Nov 11</div> -->
           <div class="mb-1 text-muted"></div>
           <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
@@ -163,219 +191,238 @@
 <main role="main" class="container">
   <div class="row">
     <div class="col-md-8 blog-main">
-      <h3 class="pb-3 mb-4 font-italic border-bottom">
-        テーマ：SCDをどう乗り越えるか
-      </h3>
+      <h2 class="pb-3 mb-4 font-italic border-bottom">
+        SCDをどう乗り越えるか
+      </h2>
 
       <div class="blog-post">
         <!-- <h2 class="blog-post-title">Sample blog post</h2> -->
-        <h2 class="blog-post-title">1.音楽を聴く♪</h2>
+        <h3 class="blog-post-title">1.音楽を聴く♪</h3>
         <!-- <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p> -->
         <p class="blog-post-meta">2022/07/18 by <a href="#">Tetsu</a></p>
 
         <!-- <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p> -->
         <p>気分が落ち込んでいる時は誰でもあります。まずは、音楽を聴きて、気分転換しましょう。元気が出る曲を3つ紹介します。</p>
         <div class="bts">
-        <iframe src="https://www.youtube.com/embed/CuklIb9d3fI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/CuklIb9d3fI" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
         </div>
         <!-- <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p> -->
         <p>この曲の歌詞に「いつだってすべてがうまく行くことはないし、全てを完ぺきにコントロールすることなんてできない。だけど、乗り越えられる方法はある。」とあって、希望が持てます。 </p>
+        <br>
         <blockquote>
           <div class="ashitamo">
-          <iframe src="https://www.youtube.com/embed/zhCtzmDWsN0" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/zhCtzmDWsN0" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
           </div>
           <!-- <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
           <p>「ダメだ、もうダメだ、立ち上がれない。そんな自分変えたくて今日も行く。」の所が好きです。</p>
+
         </blockquote>
         <!-- <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p> -->
-        <p></p>
+        <br>
         <!-- <h2>Heading</h2> -->
-        <h2>2.グループワーク対策</h2>
+        <h3>2.グループワーク対策</h3>
         <img class="GD-fluid" src="img/GD.jpg" alt="GDの画像" title="GD">
         <!-- <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> -->
         <p>次に、グループワークの対策に移ります。グループワークではディスカッションによって、課題のスピードや質が大きく変化します。</p>
         <!-- <h3>Sub-heading</h3> -->
-        <h3>グループディスカッション</h3>
+        <br>
+        <h2>グループディスカッション</h2>
         <!-- <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p> -->
         <!-- <pre><code>Example code block</code></pre> -->
 
         <!-- <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p> -->
         <p>グループディスカッションは役割が　
-          <ul>
-        <li>司会</li>
-        <li>書記</li>
-        <li>タイムキーパー</li>
-        <li>アイデア出し</li>
-        <li>発表者</li>
-      </ul>
+        <ul>
+          <li>司会</li>
+          <li>書記</li>
+          <li>タイムキーパー</li>
+          <li>アイデア出し</li>
+          <li>発表者</li>
+        </ul>
         に分かれます。そして、自分の役割に囚われず、時には他の人の役割をサポートする必要があります。
+        <br>以下は、自身の経験を交えて、グループディスカッション（GD）のコツを説明します。
         <!-- <h3>Sub-heading</h3> -->
-        <h3>サブの見出し</h3>
+        <h3>誰よりも最初に発言する</h3>
+        <img class="kyosyu-fluid" src="img/kyosyu.png" alt="挙手の画像" title="syosyu">
         <!-- <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> -->
-        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。</p>
-        <ul>
-          <!-- <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li> -->
-          <li>この書生というのは時々我々を捕えて煮て食うという話である。</li>
-          <!-- <li>Donec id elit non mi porta gravida at eget metus.</li> -->
-          <li>しかしその当時は何という考もなかったから別段恐しいとも思わなかった。</li>
-          <!-- <li>Nulla vitae elit libero, a pharetra augue.</li> -->
-          <li>ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。</li>
-        </ul>
-        <!-- <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p> -->
-        <p>掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。</p>
+        <p>最初に発言することで会話の中心になります。最初は挨拶、役割決め、話題の確認などを率先して発言します。すると、その後も議論の中心になり、会話に参加しやすくなります。</p>
+        <p>逆に、最初に発言しないと、他の人の会話に乗り遅れたり、会話にいつ入っていいかわからなくなってしまうのです。</p>
 
-        <p>のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。どうも咽せぽくて実に弱った。</p>
-      </div><!-- /.blog-post -->
-
-
-<hr>
-      <div class="blog-post">
-        <!-- <h2 class="blog-post-title">Another blog post</h2> -->
-        <h2 class="blog-post-title">たかす</h2>
-        <!-- <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p> -->
-        <p class="blog-post-meta">2013/12/23 by <a href="#">高須幹也</a></p>
-
-        <!-- <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p> -->
-        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも <a href="#">薄暗いじめじめした所</a>でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮て食うという話である。</p>
-        <blockquote>
-          <!-- <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
-          <p>しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ<strong>彼の掌に載せられてスーと持ち上げられた時</strong>何だかフワフワした感じがあったばかりである。</p>
-        </blockquote>
-        <!-- <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p> -->
-        <p>掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。</p>
-        <!-- <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> -->
-        <p>第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。どうも咽せぽくて実に弱った。これが人間の飲む煙草というものである事はようやくこの頃知った。</p>
-      </div><!-- /.blog-post -->
-<hr>
-      <div class="blog-post">
-        <!-- <h2 class="blog-post-title">New feature</h2> -->
-        <h2 class="blog-post-title">ふぇるみ</h2>
-        <!-- <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p> -->
-        <p class="blog-post-meta">2013/12/14 by <a href="#">フェルミ研究所</a></p>
-
+        <h3>褒め言葉の「さしすせそ」</h3>
+        <img class="homeru-fluid" src="img/homeru.png" alt="褒めるの画像" title="homeru">
         <!-- <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> -->
-        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。</p>
-        <ul>
-          <!-- <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li> -->
-          <li>この書生というのは時々我々を捕えて煮て食うという話である。</li>
-          <!-- <li>Donec id elit non mi porta gravida at eget metus.</li> -->
-          <li>しかしその当時は何という考もなかったから別段恐しいとも思わなかった。</li>
-          <!-- <li>Nulla vitae elit libero, a pharetra augue.</li> -->
-          <li>ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。</li>
-        </ul>
-        <!-- <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p> -->
-        <p>掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。</p>
-        <!-- <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p> -->
-        <p>第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。どうも咽せぽくて実に弱った。これが人間の飲む煙草というものである事はようやくこの頃知った。</p>
-      </div><!-- /.blog-post -->
-<hr>
-      <div class="blog-post">
-        <!-- <h2 class="blog-post-title">New feature</h2> -->
-        <h2 class="blog-post-title">ちえ</h2>
-        <!-- <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p> -->
-        <p class="blog-post-meta">2013/12/14 by <a href="#">Yahoo!知恵袋</a></p>
+        <p>突然ですが、ここで問題です。褒め言葉の「さしすせそ」は何を表しているでしょう。</p>
+      </div>
+      <div class="mondai">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <a class="btn btn-warning" data-toggle="collapse" href="#multiCollapseExample1" role="button"
+               aria-expanded="false"
+               aria-controls="multiCollapseExample1">（１）さ</a>
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                さすが！
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a class="btn btn-warning" data-toggle="collapse" href="#multiCollapseExample2" role="button"
+               aria-expanded="false"
+               aria-controls="multiCollapseExample2">（２）し</a>
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                知らなかった！
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a class="btn btn-warning" data-toggle="collapse" href="#multiCollapseExample3" role="button"
+               aria-expanded="false"
+               aria-controls="multiCollapseExample3">（３）す</a>
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+              <div class="card card-body">
+                すごいね！
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a class="btn btn-warning" data-toggle="collapse" href="#multiCollapseExample4" role="button"
+               aria-expanded="false"
+               aria-controls="multiCollapseExample4">（４）せ</a>
+            <div class="collapse multi-collapse" id="multiCollapseExample4">
+              <div class="card card-body">
+                センスあるね！
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a class="btn btn-warning" data-toggle="collapse" href="#multiCollapseExample5" role="button"
+               aria-expanded="false"
+               aria-controls="multiCollapseExample5">（５）そ</a>
+            <div class="collapse multi-collapse" id="multiCollapseExample5">
+              <div class="card card-body">
+                そうなんだ！
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a class="btn btn-warning" data-toggle="collapse" href="#multiCollapseExample6" role="button"
+               aria-expanded="false"
+               aria-controls="multiCollapseExample6">スパイス</a>
+            <div class="collapse multi-collapse" id="multiCollapseExample6">
+              <div class="card card-body">
+                リアクション増し
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+      相手を褒めると会話がスムーズになります。もし、良いアイデアが思い浮かばなくても発言できる手段になるので、便利です。
+    </div><!-- /.blog-post -->
 
-        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> -->
-        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。</p>
-        <ul>
-          <!-- <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li> -->
-          <li>この書生というのは時々我々を捕えて煮て食うという話である。</li>
-          <!-- <li>Donec id elit non mi porta gravida at eget metus.</li> -->
-          <li>しかしその当時は何という考もなかったから別段恐しいとも思わなかった。</li>
-          <!-- <li>Nulla vitae elit libero, a pharetra augue.</li> -->
-          <li>ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。</li>
-        </ul>
-        <!-- <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p> -->
-        <p>掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。</p>
-        <!-- <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p> -->
-        <p>第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。どうも咽せぽくて実に弱った。これが人間の飲む煙草というものである事はようやくこの頃知った。</p>
-      </div><!-- /.blog-post -->
 
-      <nav class="blog-pagination">
-        <!-- <a class="btn btn-outline-primary" href="#">Older</a> -->
-        <a class="btn btn-outline-primary" href="#">古い記事</a>
-        <!-- <a class="btn btn-outline-secondary disabled" href="#">Newer</a> -->
-        <a class="btn btn-outline-secondary disabled" href="#">新しい記事</a>
-      </nav>
-
-    </div><!-- /.blog-main -->
+    <hr>
+    <!-- /.blog-main -->
 
     <aside class="col-md-4 blog-sidebar">
       <div class="p-3 mb-3 bg-light rounded">
         <!-- <h4 class="font-italic">About</h4> -->
         <h4 class="font-italic">ブログについて</h4>
         <!-- <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p> -->
-        <p class="mb-0">吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも<em>薄暗いじめじめした所で</em>ニャーニャー泣いていた事だけは記憶している。</p>
+        <p class="mb-0">私は、多くの悩みを人よりも抱えています。苦しい経験や悲しい経験を少しでも解消するためにこのサイトを作りました。</p>
       </div>
 
       <div class="p-3">
-        <h4 class="font-italic">アーカイブ</h4>
-      <div class="row mb-2">
+        <h4 class="font-italic">おすすめ</h4>
+        <div class="row mb-2">
 
-        <div class="col-md-12">
-
-          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-
-            <div class="card-body d-flex flex-column align-items-start">
-              <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
-              <strong class="d-inline-block mb-2 text-success">アルバイト</strong>
-              <h3 class="mb-0">
-                <!-- <a class="text-dark" href="#">Featured post</a> -->
-                <a class="text-dark" href="#">上司との関係</a>
-              </h3>
-              <!-- <div class="mb-1 text-muted">Nov 12</div> -->
-              <div class="mb-1 text-muted"></div>
-              <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
-              <p class="card-text ml-auto">理不尽に怒られることがあり、なかなか大変な状況。辞めたいけど、今辞めたらなんか負けた気がする。</p>
-              <!-- <a href="#">Continue reading</a> -->
-              <a href="#">続きを読む</a>
+          <div class="col-md-12">
+            <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                <strong class="d-inline-block mb-2 text-secondary">アルバイト</strong>
+                <h4 class="mb-0">
+                  <!-- <a class="text-dark" href="#">Featured post</a> -->
+                  <a class="text-dark" href="#">上司との関係</a>
+                </h4>
+                <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                <div class="mb-1 text-muted"></div>
+                <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+                <p class="card-text ml-auto">理不尽に怒られることがあり、なかなか大変な状況。辞めたいけど、今辞めたらなんか負けた気がする。</p>
+                <!-- <a href="#">Continue reading</a> -->
+                <a href="#">続きを読む</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                <strong class="d-inline-block mb-2 text-secondary">アルバイト</strong>
+                <h4 class="mb-0">
+                  <!-- <a class="text-dark" href="#">Featured post</a> -->
+                  <a class="text-dark" href="#">上司との関係</a>
+                </h4>
+                <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                <div class="mb-1 text-muted"></div>
+                <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+                <p class="card-text ml-auto">理不尽に怒られることがあり、なかなか大変な状況。辞めたいけど、今辞めたらなんか負けた気がする。</p>
+                <!-- <a href="#">Continue reading</a> -->
+                <a href="#">続きを読む</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
+  </div>
+  </div>
 
-      <div class="p-3">
-        <!-- <h4 class="font-italic">Archives</h4> -->
-        <h4 class="font-italic">アーカイブ</h4>
-        <ol class="list-unstyled mb-0">
-          <!-- <li><a href="#">March 2014</a></li>
-          <li><a href="#">February 2014</a></li>
-          <li><a href="#">January 2014</a></li>
-          <li><a href="#">December 2013</a></li>
-          <li><a href="#">November 2013</a></li>
-          <li><a href="#">October 2013</a></li>
-          <li><a href="#">September 2013</a></li>
-          <li><a href="#">August 2013</a></li>
-          <li><a href="#">July 2013</a></li>
-          <li><a href="#">June 2013</a></li>
-          <li><a href="#">May 2013</a></li>
-          <li><a href="#">April 2013</a></li> -->
-          <li><a href="#">2014/03</a></li>
-          <li><a href="#">2014/02</a></li>
-          <li><a href="#">2014/01</a></li>
-          <li><a href="#">2013/12</a></li>
-          <li><a href="#">2013/11</a></li>
-          <li><a href="#">2013/10</a></li>
-          <li><a href="#">2013/09</a></li>
-          <li><a href="#">2013/08</a></li>
-          <li><a href="#">2013/07</a></li>
-          <li><a href="#">2013/06</a></li>
-          <li><a href="#">2013/05</a></li>
-          <li><a href="#">2013/04</a></li>
-        </ol>
-      </div>
+  <div class="p-3">
+    <!-- <h4 class="font-italic">Archives</h4> -->
+    <h4 class="font-italic">アーカイブ</h4>
+    <ol class="list-unstyled mb-0">
+      <!-- <li><a href="#">March 2014</a></li>
+      <li><a href="#">February 2014</a></li>
+      <li><a href="#">January 2014</a></li>
+      <li><a href="#">December 2013</a></li>
+      <li><a href="#">November 2013</a></li>
+      <li><a href="#">October 2013</a></li>
+      <li><a href="#">September 2013</a></li>
+      <li><a href="#">August 2013</a></li>
+      <li><a href="#">July 2013</a></li>
+      <li><a href="#">June 2013</a></li>
+      <li><a href="#">May 2013</a></li>
+      <li><a href="#">April 2013</a></li> -->
+      <li><a href="#">2014/03</a></li>
+      <li><a href="#">2014/02</a></li>
+      <li><a href="#">2014/01</a></li>
+      <li><a href="#">2013/12</a></li>
+      <li><a href="#">2013/11</a></li>
+      <li><a href="#">2013/10</a></li>
+      <li><a href="#">2013/09</a></li>
+      <li><a href="#">2013/08</a></li>
+      <li><a href="#">2013/07</a></li>
+      <li><a href="#">2013/06</a></li>
+      <li><a href="#">2013/05</a></li>
+      <li><a href="#">2013/04</a></li>
+    </ol>
+  </div>
 
-      <div class="p-3">
-        <!-- <h4 class="font-italic">Elsewhere</h4> -->
-        <h4 class="font-italic">SNS</h4>
-        <ol class="list-unstyled">
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-        </ol>
-      </div>
-    </aside><!-- /.blog-sidebar -->
+  <div class="p-3">
+    <!-- <h4 class="font-italic">Elsewhere</h4> -->
+    <h4 class="font-italic">SNS</h4>
+    <ol class="list-unstyled">
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Facebook</a></li>
+    </ol>
+  </div>
+  </aside><!-- /.blog-sidebar -->
 
   </div><!-- /.row -->
 
@@ -383,16 +430,18 @@
 <footer class="blog-footer">
   <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
 
-    <!-- <a href="#">Back to top</a> -->
+  <!-- <a href="#">Back to top</a> -->
   <div class="text-center">
-  <a href="#">トップに戻る</a>
+    <a href="#">トップに戻る</a>
     <p class="d-inline mx-1">|</p>
-  <a href="help.html">ヘルプ</a>
+    <a href="help.html">ヘルプ</a>
   </div>
 </footer>
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
