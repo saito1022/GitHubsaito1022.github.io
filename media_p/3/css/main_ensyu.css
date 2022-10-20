@@ -1,0 +1,24 @@
+
+div {
+  margin-bottom: 0.5em;
+}
+span {
+  display: inline-block;
+  margin-left: 1em;
+}
+div.top{
+  text-align: center;
+  font-size: 2em;
+  background: #99CCFF;
+}
+div.name{
+  text-align: right;
+}
+div.header{
+  font-size: 1.5em;
+  color: #6594e0;
+}
+p{
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+}

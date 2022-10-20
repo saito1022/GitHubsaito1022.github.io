@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main_ensyu.css">
+  <script type="text/javascript" src="js/vue.dev.js"></script>
+  <title>配列の情報でリスト生成（演習）</title>
+</head>
+<body>
+<!-- Vue.jsで操作する対象としてid付け（名前は任意） -->
+<div id="vue">
+  <div v-for='item in list' class="blue">
+    <div class="top">{{item.top}}</div>
+    <div class="name">{{item.name}}</div>
+  </div>
+  <!-- 自身で用意したJSONの中身を表示するHTMLを書く -->
+  <!-- data内のlistというJSONからitemという名前で要素を一つずつ取得し繰り返し表示 -->
+  <div v-for='item in list' class="blue">
+    <!-- {{}}で囲んだ中に取得した要素の情報をセットすると表示可能 -->
+
+    <div class="header">{{item.header}}</div>
+    <!-- 入れ子になっている要素も同じように一つずつ取得可能 -->
+    <p v-for='text in item.texts'>{{text}}</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+    // Vue.js開始
+    new Vue({
+        // ページ内のidがvueであるブロックを操作
+        el: '#vue',
+        // 利用するデータ
+        data: {
+            // リスト用配列
+            list: [
+                {"top":"第3回の演習"},
+                {"name":"M0A20128 齋藤徹典"},
+                {"header":"好きなアニメは？", "texts": ["古見さんはコミュ症です。"]},
+                {"header":"主人公は？", "texts": ["古見 硝子（こみ しょうこ）"]},
+                {"header":"声優さんは？", "texts": ["古賀 葵（こが あおい）さん"]},
+                {"header":"どんなアニメなの？", "texts": ["古見さんはコミュ症で人付き合いがとても苦手。でも友達が欲しいと思ってる。そこに、人の気持ちを察するのが得意な只野くんが友達になり、少しずつ友達がふえていく物語。"]}
+            ]
+
+        }
+    });
+</script>
+</body>
+</html>
