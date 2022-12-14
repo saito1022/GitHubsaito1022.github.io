@@ -26,12 +26,12 @@ function ALL() {
             }
         )
 }
-function Sabu() {
+function Saburo() {
     fetch(url)
         .then((response) => response.json())
         .then(
             function (json) {
-                console.log("Sabu");
+                console.log("Saburo");
                 let answerHtml = "";
                 console.log(json);
                 console.log(json[0].name);
@@ -46,12 +46,12 @@ function Sabu() {
             }
         )
 }
-function Ziro() {
+function Jiro() {
     fetch(url)
         .then((response) => response.json())
         .then(
             function (json) {
-                console.log("Ziro");
+                console.log("Jiro");
                 let answerHtml = "";
                 console.log(json);
                 console.log(json[0].name);
