@@ -12,7 +12,6 @@ fetch(url)
             document.querySelector("#answer").innerHTML = answerHtml
         }
     )
-
 function ALL() {
     fetch(url)
         .then((response) => response.json())
