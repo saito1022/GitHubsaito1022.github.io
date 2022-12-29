@@ -1,0 +1,13 @@
+body{
+  background-color: antiquewhite;
+  color: #2d2d2d;
+}
+.assessment{
+  text-align: center;
+}
+button{
+  padding:  1px 10px;
+}
+input{
+  height: 20px;
+}
