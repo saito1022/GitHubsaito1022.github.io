@@ -2,9 +2,9 @@ body{
   background-color: antiquewhite;
 }
 @media screen and (max-width:480px){
-  body{
-    background-color: blue;
-  }
+  /*
+  スマホ画面対策用
+   */
 }
 
 .assessment{
