@@ -2,19 +2,20 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>TO-DO LIST</title>
   <link rel="stylesheet" href="final.css">
-
+  <script src="final.js"  defer></script>
 </head>
 <body>
-<div id="items">
-    <div class="item">
-      <input type="checkbox" class="item-completed">
-      <input type="text" class="item-description" placeholder="ここに追加">
-    <button id="add">追加</button>
-      </div>
-</div>
-<script src="final.js"></script>
+<div id="items"></div>
+<template id="itemTemplate">
+  <div class="item">
+    <input type="checkbox" class="item-completed">
+    <input type="text" class="item-description" placeholder="ここに追加">
+  </div>
+</template>
+<button id="add">追加</button>
 </body>
 </html>
