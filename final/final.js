@@ -5,14 +5,14 @@ const ADD_BUTTON = document.getElementById("add");
 let items = getItems();
 
 function getItems(){
-    const value = sessionStorage.getItem("todo")||"[]";
+    const value = localStorage.getItem("todo")||"[]";
 
     return JSON.parse(value);
 
 }
 function setItems(items){
     const itemsJson = JSON.stringify(items);
-    sessionStorage.setItem("todo",itemsJson);
+    localStorage.setItem("todo",itemsJson);
 }
 function addItem(){
     items.unshift({
