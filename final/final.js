@@ -31,15 +31,7 @@ function updateItem(item, key, value){
 }
 
 function refreshList(){
-    items.sort((a,b)=>{
-        if(a.completed){
-            return 1;
-        }
-        if(b.completed){
-            return -1;
-        }
-        return a.description < b.description ? -1 : 1;
-    });
+
     ITEMS_CONTAINER.innerHTML = "";
 
     for(const item of items){
